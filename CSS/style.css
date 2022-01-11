@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    background-color: rgb(218, 218, 218);
+    background-image: linear-gradient(white, rgb(148, 148, 148));
 }
 
 
@@ -202,7 +202,9 @@ footer {
 }
 
 #staff h2 {
-    color:orange;
+    color: white;
+    width: 100%;
+    background-color:rgb(224, 146, 0);
     margin-top: 10px;
     text-align: center;
     font-family: "Roboto";
@@ -248,8 +250,14 @@ footer {
     gap: 1em;
 }
 
-.fotosmarcas .logoombu {
+.fotosmarcas .logo-marca {
     width: 100%;
+    filter: grayscale(1)
+}
+
+.fotosmarcas .logo-marca:hover {
+    filter: none;
+    display: block;
 }
 
 
@@ -318,6 +326,9 @@ footer {
     background: grey;
 }
 
+.contacto input:hover {
+    background-color: rgb(255, 226, 172);
+}
 
                             /*MEDIA QUERIES*/
 
