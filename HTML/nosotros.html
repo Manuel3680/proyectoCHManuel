@@ -5,27 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestro Staff</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
 <body>
     <header>
         <a title="logo" href="../index.html"><img class="logoorci" src="../Imagenes/logo.png" alt="Logo"/></a>
-        <nav id="menu">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="marcas.html">Marcas</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li class="derecho"><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+         </header>
+
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./marcas.html">Marcas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+            
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
     <div id="staff">
     <img class="imagenStaff" src="../Imagenes/Sin título-1.jpg" alt="Staff">
     <h2>Nuestra empresa</h2>
     <p class="parrafoStaff">Lorem ipsum dolor sit ameft consectetur adipisicing elit. Harum enim esse iure sit dicta suscipit ipsum, facilis perferendis nisi aspernatur dolor. Repudiandae voluptas consequuntur sed eligendi nam atque deleniti? Minus temporibus dicta incidunt laborum vitae, recusandae natus blanditiis officiis deleniti odio, cupiditate eligendi earum itaque velit omnis ex delectus explicabo. Quod asperiores eos excepturi laudantium et dicta obcaecati fuga ipsam corrupti illo facere error sunt doloribus esse tempore fugiat maiores corporis suscipit, reprehenderit eligendi ut id magnam voluptates ullam. Consequuntur accusantium dolor sequi eaque nihil quae optio rem asperiores rerum maxime! Ex, illum alias. In sit accusamus maiores! Officiis eius saepe maxime repudiandae voluptates ipsam dolorem voluptate consectetur rem itaque, id ullam rerum. Iste sit earum hic quis minima in repellat, magnam est ea non, omnis quam vero quasi debitis molestiae voluptatum unde iure deserunt explicabo nesciunt ipsa ex nam aspernatur. Nihil vitae dolor omnis doloribus? Deserunt ipsum dolore a?
     </p>
+</div>
+
+
+<div class="boton">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    ¿Queres trabajar con nosotros?
+  </button> 
+</div>
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Envianos un email a la siguiente casilla</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        empleo@orciindumentaria.com.ar
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Entendido</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <footer>
@@ -40,7 +91,10 @@
                 </ul>
             </div>
         </div>
-       </footer>    
+       </footer>   
+       
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

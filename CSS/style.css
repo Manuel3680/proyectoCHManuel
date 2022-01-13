@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    background-image: linear-gradient(white, rgb(148, 148, 148));
+    background-color: rgb(221, 221, 221);
 }
 
 
@@ -23,7 +23,7 @@ body {
 
 
 /*Navegador de todas las páginas*/
-#menu {
+/* #menu {
     margin-bottom: 20px;
     background:#272727
 }
@@ -48,7 +48,7 @@ body {
 #menu ul li a:hover {
     background-color: orange
 }
-
+ */
 
 
 
@@ -57,7 +57,7 @@ footer {
     width: 100%;
 	height: auto;
 	margin: auto;
-	background-color:#272727;
+	background-color: rgb(209, 209, 209);
 	padding: 20px 0px;
 }
 
@@ -83,7 +83,7 @@ footer {
 	text-decoration: none;
 	font-family: "Roboto";
 	font-size: 20px;
-	color: #fff;
+	color: rgb(0, 0, 0);
 	letter-spacing: 1px;
 }
 
@@ -93,11 +93,10 @@ footer {
 
 
 /* Home*/
-.flyer {
-    display: block;
+.section-flyer {
     margin: auto;
     width: 100%;
-}
+} 
 
 .flex-main {
     font-family: "Roboto";
@@ -165,27 +164,22 @@ footer {
 
 header {
     grid-area: header;
-    /* background-color: black; */
 }
 
 nav {
     grid-area: nav;
-    /* background-color: blue; */
 }
 
 section.section-flyer{
     grid-area: flyer;
-    /* background-color:green; */
 }
 
 main {
     grid-area: main;
-    /* background-color: red; */
 }
 
 section.section-iframe {
     grid-area: iframe;
-    /* background-color: pink; */
     width: 100%;
 }
 
@@ -394,3 +388,21 @@ footer {
 }
 }
 
+.nav-item {
+    font-size: 30px;
+}
+
+.nav-item:hover {
+    /* background-color: orange; */
+    font-weight:500;
+}
+
+.container-fluid {
+    background-color: rgb(209, 209, 209);
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
