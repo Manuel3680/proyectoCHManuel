@@ -15,374 +15,30 @@ body {
     background-color: rgb(221, 221, 221);
 }
 
-
-.logoorci {
-    padding:20px;
-    width: 300px;
-}
-
-
-/* /*Footer de todas las páginas*/
-/* footer {
-    width: 100%;
-	height: auto;
-	margin: auto;
-	background-color: rgb(209, 209, 209);
-	padding: 20px 0px;
-}
-
-.links{
-	width: 100%;
-	height: auto;
-	margin: auto;
-	margin: 20px;
-}
-
-.links ul{
-	margin-right: 50px;
-	padding: 0px;
-	text-align: right;
-}
-
-.links li{
-	display: inline-block;
-	margin: 10px 20px;	 
-}
-
-.links ul li a{
-	text-decoration: none;
-	font-family: "Roboto";
-	font-size: 20px;
-	color: rgb(0, 0, 0);
-	letter-spacing: 1px;
-}
-
-.links ul li a:hover{
-	color:orange;
-} */ 
-
-
-/* Home*/
-.section-flyer {
-    margin: auto;
-    width: 100%;
-} 
-
-.flex-main {
-    font-family: "Roboto";
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.flex-main h2 {
-    color: orange;
-    font-size: 40px;
-}
+/*---------------------------------------- NAV*/
+.navbar{
+    border-bottom: 3px solid white;
+    box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.8);
     
-.flex-main p {
-    font-size: 20px;
-}
-
-.articulo1 {
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
-
-.articulo2 {
-    background-color: white;
-    display: flex;
-   flex-direction: row-reverse;
-    gap: 15px;
-    text-align: right;
-}
-
-.articulo3 {
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
- }
-
- .articulo4 {
-    background-color: white;
-    display: flex;
-   flex-direction: row-reverse;
-    gap: 15px;
-    text-align: right;
-}
-
-.section-iframe {
-    text-align: center;
-    font-family: "Roboto";
-    margin: auto;
-}
-
-.grid-area-home {
-    display:grid;
-    grid-template-areas: 
-        "header header header"
-        "nav nav nav"
-        "flyer flyer flyer"
-        "main main main"
-        "iframe iframe iframe"
-        "footer footer footer";
-}
-
-header {
-    grid-area: header;
-}
-
-nav {
-    grid-area: nav;
-}
-
-section.section-flyer{
-    grid-area: flyer;
-}
-
-main {
-    grid-area: main;
-}
-
-section.section-iframe {
-    grid-area: iframe;
-    width: 100%;
-}
-
-footer {
-    grid-area: footer;
-    
-}
-
- 
-/*HTML Nosotros*/
-.imgpersonal {
-    display: block;
-    margin:auto;   
-    width: 100%;
-}
-
-#staff h2 {
-    color: white;
-    width: 100%;
-    background-color:rgb(224, 146, 0);
-    margin-top: 10px;
-    text-align: center;
-    font-family: "Roboto";
-}
-
-#staff p {
-    margin-top: 5px;
-    text-align: center;
-    font-family: "Roboto";
-    margin-bottom: 25px;
-}
-
-
-/*Marcas*/
-.grid-area-marcas {
-    display:grid;
-    grid-template-areas: 
-        "header header header"
-        "nav nav nav"
-        "section section section"
-        "footer footer footer";
-}
-header {
-    grid-area: header;
-}
-
-nav {
-    grid-area: nav;
-}
-
-section.fotosmarcas {
-    grid-area: section;
-}
-
-footer {
-    grid-area: footer;
-}
- 
-.fotosmarcas{
-    display:grid;
-    grid-template-columns: repeat(5, 1fr);
-    padding: 20px;
-    gap: 1em;
-}
-
-.fotosmarcas .logo-marca {
-    width: 100%;
-    filter: grayscale(1)
-}
-
-.fotosmarcas .logo-marca:hover {
-    filter: none;
-    display: block;
-}
-
-
-/*Productos*/
-.fotosProductos {
-    display:grid;
-    grid-template-columns: repeat(5, 1fr);
-    padding: 20px;
-    gap: 1em;
-}
-
-.ropafrio {
-    width: 100%;
-    filter: grayscale(1);
-}
-
-.ropafrio:hover {
-    filter: none;
-    display: block;
-}
-
-
-/*Contacto*/
-.gridContacto {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    gap: 80px;
-}
-
-.contacto{
-    font-family: "Roboto";
-    color: grey;
-    padding: 30px;
-}
-
-.contacto label{ 
-    font-weight: bold;
-}
-
-.contacto div{
-    margin-bottom: 15px;
-}
-
-.contacto input[type='text'], .contacto textarea{
-    padding: 10px;
-    width: 100%;
-    border: 1px solid grey;
-    margin: 5px;
-}
-
-.contacto input[type='submit']{
-    border: 1px solid orange;
-    box-shadow:0 0 0 3px white;
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-weight: bold;
-    color: white;
-    background-color:orange;
- }
-
-.contacto input[type='submit']:hover{
-    background: orange;
-}
-
-.contacto input[type='submit']:active{
-    background: grey;
-}
-
-.contacto input:hover {
-    background-color: rgb(255, 226, 172);
-}
-
-                            /*MEDIA QUERIES*/
-
-/*Media Queries Home*/
-@media (max-width: 1023px) {
-    .articulo1, .articulo2, .articulo3, .articulo4 {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 1023px) {
-     .flex-main h2{
-         text-align: center;
-         color: orange;
-    }
-}
-
-@media (max-width: 1023px) {
-    .flex-main p{
-        text-align: center;
-        color: rgb(0, 0, 0);
-        margin: 10px;
-   }
-}
-
-@media (max-width: 1023px) {
-    .flex-main img{
-        filter: grayscale(1)
-   }
-}
-
-@media (max-width: 1023px) {
-    .flex-main img:hover {
-        filter: none;
-        display: block;
-    }
-}
-
-@media (max-width: 1023px) {
-    .logoorci { 
-    display: block;
-    margin: auto;
-    }
-   
-}
-
-
-/*Media Queries Contacto*/
-@media (max-width: 1023px) {
-    .gridContacto {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-}
-
-
-@media (max-width: 1023px) {
-    .gridContacto .contacto {
-        width: 90%;
-        text-align: center;
-}
 }
 
 .nav-item {
-    font-size: 30px;
-}
-
-.nav-item:hover {
-    /* background-color: orange; */
-    font-weight:500;
+    font-size: 25px;
+    margin:10px
 }
 
 .container-fluid {
-    background-color: rgb(209, 209, 209);
+    background-color:rgb(80, 80, 80);
 }
 
-.boton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ .container-fluid a:hover{
+    background-color: orange;
 }
+/* --------------------------------------- FIN NAV*/
 
+/* --------------------------------------- FOOTER*/
 
-
-
-
-   footer {
+footer {
     background: #3a3a3a;
     color: #fff;
     font-size: 14px;
@@ -412,7 +68,6 @@ footer .social-links a {
     height: 36px;
     transition: 0.4s;
 }
-
 
 footer h3 {
     color:orange
@@ -485,29 +140,288 @@ footer .footer-bottom a {
     color: #cddc39;
     text-decoration: none;
 }
+/* --------------------------------------- FIN FOOTER*/
 
 
+/* --------------------------------------- HOME*/
+
+/*Cards servicios*/
+.servicios {
+    margin-top: 30px;
+}
+
+.profile-area {
+    padding: 80px 0;
+}
+
+.card {
+    overflow: hidden;
+    border-radius: 15px;
+    border: 10px solid #fff;
+}
+
+.im1 img {
+    height: 200px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+}
+
+.im2 img {
+    position:relative;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    margin-top: -90px;
+}
+
+.card:hover img {
+    border-color: orange;
+    transition: 1s;
+}
+
+.card:hover {
+    border-color: orange;
+    transition: 1s;
+}
+
+.card:hover {
+    transform: scale(1.04);
+}
+
+.main-text {
+    padding: 30px 0;
+    text-align:center;
+}
+
+.main-text h2 {
+    color: orange;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+
+.main-text p {
+    font-size: 16px;
+    padding: 0 35px;
+    margin: 0 0 20px
+}
+/*Fin cards servicios*/
+
+/*Slide clientes inicio*/
+.clientesHome h2{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: orange;
+    padding: 5px;
+    color: white;
+}
+/*Slide clientes fin*/
+
+.flex-main {
+    font-family: "Roboto";
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.flex-main h2 {
+    color: orange;
+    font-size: 40px;
+}
+    
+.flex-main p {
+    font-size: 20px;
+}
+
+.articulo1 {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.articulo2 {
+    background-color: white;
+    display: flex;
+   flex-direction: row-reverse;
+    gap: 15px;
+    text-align: right;
+}
+
+.articulo3 {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+ }
+
+ .articulo4 {
+    background-color: white;
+    display: flex;
+   flex-direction: row-reverse;
+    gap: 15px;
+    text-align: right;
+ }
+
+.section-iframe {
+    text-align: center;
+    font-family: "Roboto";
+    margin: auto;
+    margin-bottom: 25px
+} 
+
+.mapaHome {
+    filter: grayscale(100%);
+}
+
+.mapaHome:hover {
+    filter:none;
+}
+
+.grid-area-home {
+    display:grid;
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "flyer flyer flyer"
+        "main main main"
+        "iframe iframe iframe"
+        "footer footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+section.section-flyer{
+    grid-area: flyer;
+}
+
+main {
+    grid-area: main;
+}
+
+section.section-iframe {
+    grid-area: iframe;
+    width: 100%;
+}
+
+footer {
+    grid-area: footer;
+    
+}
+/* --------------------------------------- FIN HOME*/
+ 
+/* --------------------------------------- NOSOTROS*/
+.imgpersonal {
+    display: block;
+    margin:auto;   
+    width: 100%;
+}
+
+#staff h2 {
+    color: white;
+    width: 100%;
+    background-color:rgb(224, 146, 0);
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Roboto";
+}
+
+#staff p {
+    margin-top: 5px;
+    text-align: center;
+    font-family: "Roboto";
+    margin-bottom: 25px;
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px
+}
+/* --------------------------------------- FIN NOSOTROS*/
+
+/* --------------------------------------- MARCAS*/
+.grid-area-marcas {
+    display:grid;
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "section section section"
+        "footer footer footer";
+}
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+section.fotosmarcas {
+    grid-area: section;
+}
+
+footer {
+    grid-area: footer;
+}
+ 
+.fotosmarcas{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 20px;
+    gap: 1em;
+}
+
+.fotosmarcas .logo-marca {
+    width: 100%;
+    filter: grayscale(1)
+}
+
+.fotosmarcas .logo-marca:hover {
+    filter: none;
+    display: block;
+}
+/* --------------------------------------- FIN MARCAS*/
 
 
-
-h2 {
+/* --------------------------------------- PRODUCTOS*/
+.container h2 {
     position: relative;
     margin-bottom: 35px;
+    background-color: orange;
+    padding: 5px;
+    color: white;
 }
-h2::after {
+h2:after {
     content: "";
     width: 120px;
     height: 3px;
     display: inline-block;
-    background: orange;
     position: absolute;
     left: 0px;
     right: 0px;
     bottom: -20px;
     margin: 0 auto;
 }
-p{
-	width: 70%;
+.col-12 p{
+	font-size: 20px;
+    width: 70%;
 	margin: 0 auto;
 	color: #848484;
 }
@@ -563,7 +477,6 @@ p{
   	transform: scale(1.04);
 }
 
-
 .img-box:hover::before {
   	left: 10px;
   	top: 10px;
@@ -572,3 +485,123 @@ p{
   	right: 10px;
   	bottom: 10px;
 }
+/* --------------------------------------- FIN PRODUCTOS*/
+
+
+/* --------------------------------------- CONTACTO*/
+.gridContacto {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 80px;
+}
+
+.contacto{
+    font-family: "Roboto";
+    color: grey;
+    padding: 30px;
+}
+
+.contacto label{ 
+    font-weight: bold;
+}
+
+.contacto div{
+    margin-bottom: 15px;
+}
+
+.contacto input[type='text'], .contacto textarea{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid grey;
+    margin: 5px;
+}
+
+.contacto input[type='submit']{
+    border: 1px solid orange;
+    box-shadow:0 0 0 3px white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    background-color:orange;
+ }
+
+.contacto input[type='submit']:hover{
+    background: orange;
+}
+
+.contacto input[type='submit']:active{
+    background: grey;
+}
+
+.contacto input:hover {
+    background-color: rgb(255, 226, 172);
+}
+/* --------------------------------------- FIN CONTACTO*/
+ 
+
+/* --------------------------------------- MEDIA QUERIES*/
+
+/*Media Queries Home*/
+ @media (max-width: 1023px) {
+    .articulo1, .articulo2, .articulo3, .articulo4 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1023px) {
+     .flex-main h2{
+         text-align: center;
+         color: orange;
+    }
+}
+
+@media (max-width: 1023px) {
+    .flex-main p{
+        text-align: center;
+        color: rgb(0, 0, 0);
+        margin: 10px;
+   }
+}
+
+@media (max-width: 1023px) {
+    .flex-main img{
+        filter: grayscale(1)
+   }
+}
+
+@media (max-width: 1023px) {
+    .flex-main img:hover {
+        filter: none;
+        display: block;
+    }
+}
+
+@media (max-width: 1023px) {
+    .logoorci { 
+    display: block;
+    margin: auto;
+    }
+   
+} 
+
+/*Media Queries Contacto*/
+@media (max-width: 1023px) {
+    .gridContacto {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .gridContacto .contacto {
+        width: 90%;
+        text-align: center;
+}
+}
+/* --------------------------------------- FIN MEDIA QUERIES*/
+
+
+ 
