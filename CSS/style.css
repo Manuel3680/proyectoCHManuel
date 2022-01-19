@@ -36,6 +36,35 @@ body {
 }
 /* --------------------------------------- FIN NAV*/
 
+/* ---------------------------------------IMAGEN PRESENTACIÓN SECCIÓN*/
+.textoP {
+    background-color: rgba(0,0,0,.7);
+}
+
+.textoP h1 {
+    font-size: 50px;
+    color: orange;
+    line-height: 70px;
+    margin:70px 0 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+}
+
+.textoP p {
+     font-size: 15px;
+     text-transform: uppercase;
+     padding-bottom: 20px;
+     font-weight: 500;
+
+}
+
+.presentacion {
+    margin-bottom: 30px;
+}
+/* --------------------------------------- FIN IMAGEN PRESENTACIÓN SECCIÓN*/
+
 /* --------------------------------------- FOOTER*/
 
 footer {
@@ -326,26 +355,12 @@ footer {
 /* --------------------------------------- FIN HOME*/
  
 /* --------------------------------------- NOSOTROS*/
-.imgpersonal {
-    display: block;
-    margin:auto;   
-    width: 100%;
-}
 
-#staff h2 {
-    color: white;
-    width: 100%;
-    background-color:rgb(224, 146, 0);
-    margin-top: 10px;
+
+.texto-staff {
+    margin: 0 80px 25px 80px;
     text-align: center;
     font-family: "Roboto";
-}
-
-#staff p {
-    margin-top: 5px;
-    text-align: center;
-    font-family: "Roboto";
-    margin-bottom: 25px;
 }
 
 .boton {
@@ -604,4 +619,3 @@ h2:after {
 /* --------------------------------------- FIN MEDIA QUERIES*/
 
 
- 
