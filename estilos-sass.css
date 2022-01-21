@@ -1,0 +1,104 @@
+#form-sass .signup-form {
+  border-radius: 50px;
+  width: 800px;
+  margin: 30px auto;
+  background: white;
+}
+
+#form-sass .form-header {
+  background-color: #4e4e4e;
+}
+
+#form-sass .form-header h1 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #4e4e4e;
+}
+
+#form-sass .form-body {
+  padding: 10px 40px;
+  color: #666;
+}
+
+#form-sass .form-group {
+  margin-bottom: 20px;
+}
+
+#form-sass .label-title {
+  color: orange;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+#form-sass .form-input {
+  font-size: 17px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 34px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #333333;
+  text-align: left;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  background: white;
+  outline: none;
+}
+
+#form-sass .horizontal-group .left {
+  float: left;
+  width: 49%;
+}
+
+#form-sass .horizontal-group .right {
+  float: right;
+  width: 49%;
+}
+
+#form-sass input[type="file"] {
+  outline: none;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+#form-sass ::-webkit-input-placeholder {
+  color: #d9d9d9;
+}
+
+#form-sass .signup-form .form-footer {
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px 40px;
+  text-align: right;
+  border-top: 1px solid #cccccc;
+  clear: both;
+}
+
+#form-sass .signup-form .form-footer span {
+  float: left;
+  margin-top: 10px;
+  color: #999;
+  font-style: italic;
+  font-weight: thin;
+}
+
+#form-sass .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4e4e4e;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+#form-sass .btn:hover {
+  background-color: orange;
+  color: white;
+}
+/*# sourceMappingURL=estilos-sass.css.map */
