@@ -648,15 +648,10 @@ h2:after {
         display: flex;
         flex-wrap: wrap;
         gap: 15px;
+        width: 90%;
     }
 }
 
-@media (max-width: 1023px) {
-    #form-sass .horizontal-group {
-        width: 90%;
-        
-}
-}
 /* --------------------------------------- FIN MEDIA QUERIES*/
 
 

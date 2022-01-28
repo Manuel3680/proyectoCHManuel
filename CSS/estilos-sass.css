@@ -101,4 +101,43 @@
   background-color: #ee8000;
   color: white;
 }
+
+/*-------------------------EXTEND*/
+.franquicia-preg {
+  text-align: center;
+}
+
+.franquicia-preg h2 {
+  background-color: #ee8000;
+  padding: 10px;
+  color: white;
+  font-size: 40px;
+}
+
+.franq-p, .franq-p2, .franq-p3 {
+  font-size: 30px;
+  font-style: italic;
+  color: #4e4e4e;
+  background-color: lightgrey;
+}
+
+.franq-p2 {
+  font-weight: 700;
+  color: #ee8000;
+}
+
+.franq-p3 {
+  font-size: 25px;
+}
+
+/*-------------------------FIN EXTEND*/
+/*-------------------------MIXIN*/
+.img-franq {
+  margin: 5px;
+  border-radius: 15px;
+  border: 7px solid white;
+  width: 300px;
+}
+
+/*------------------------- FIN MIXIN*/
 /*# sourceMappingURL=estilos-sass.css.map */

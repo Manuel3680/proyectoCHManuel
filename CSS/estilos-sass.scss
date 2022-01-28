@@ -99,3 +99,46 @@ $colorfondo: #4e4e4e;
      }
 
 }
+/*-------------------------EXTEND*/
+.franquicia-preg{
+  text-align: center;
+  h2 {
+    background-color: $colororci;
+    padding: 10px;
+    color: white;
+    font-size: 40px;
+  }
+}
+
+.franq-p {
+  font-size: 30px;
+  font-style: italic;
+  color: $colorfondo;
+  background-color: lightgrey;
+}
+
+.franq-p2 {
+  @extend .franq-p;
+  font-weight: 700;
+  color: $colororci;
+}
+
+.franq-p3 {
+  @extend .franq-p;
+  font-size: 25px;
+}
+/*-------------------------FIN EXTEND*/
+
+/*-------------------------MIXIN*/
+@mixin mix-franq {
+
+  margin: 5px;
+  border-radius: 15px;
+  border: 7px solid white;
+  width: 300px;
+}
+
+.img-franq {
+  @include mix-franq();
+}
+/*------------------------- FIN MIXIN*/
