@@ -27,7 +27,7 @@
 }
 
 #form-sass .label-title {
-  color: orange;
+  color: #ee8000;
   font-size: 17px;
   font-weight: bold;
 }
@@ -40,7 +40,7 @@
   height: 34px;
   padding-left: 10px;
   padding-right: 10px;
-  color: #333333;
+  color: #4e4e4e;
   text-align: left;
   border: 1px solid #d6d6d6;
   border-radius: 4px;
@@ -65,7 +65,7 @@
 }
 
 #form-sass ::-webkit-input-placeholder {
-  color: #d9d9d9;
+  color: #4e4e4e;
 }
 
 #form-sass .signup-form .form-footer {
@@ -81,7 +81,7 @@
 #form-sass .signup-form .form-footer span {
   float: left;
   margin-top: 10px;
-  color: #999;
+  color: #4e4e4e;
   font-style: italic;
   font-weight: thin;
 }
@@ -98,7 +98,7 @@
 }
 
 #form-sass .btn:hover {
-  background-color: orange;
+  background-color: #ee8000;
   color: white;
 }
 /*# sourceMappingURL=estilos-sass.css.map */

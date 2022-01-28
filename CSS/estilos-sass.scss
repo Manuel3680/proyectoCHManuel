@@ -1,3 +1,6 @@
+$colororci: #ee8000;
+$colorfondo: #4e4e4e;
+
 #form-sass {
     .signup-form {
         border-radius: 50px;
@@ -6,14 +9,14 @@
         background: white; 
     }
     .form-header {
-        background-color:#4e4e4e;
+        background-color:$colorfondo;
     }
     .form-header h1 {
         color:white;
         font-size: 30px;
         text-align:center;
         padding:20px 0;
-        border-bottom:1px solid #4e4e4e;
+        border-bottom:1px solid $colorfondo;
     }
     .form-body {
         padding:10px 40px;
@@ -23,7 +26,7 @@
         margin-bottom:20px;
       }
       .label-title {
-        color: orange;
+        color: $colororci;
         font-size: 17px;
         font-weight: bold;
       }
@@ -34,7 +37,7 @@
         height: 34px;
         padding-left: 10px;
         padding-right: 10px;
-        color: #333333;
+        color: $colorfondo;
         text-align: left;
         border: 1px solid #d6d6d6;
         border-radius: 4px;
@@ -57,7 +60,7 @@
         font-size: 17px;
       }
       ::-webkit-input-placeholder  {
-        color:#d9d9d9;
+        color:$colorfondo;
       }
       .signup-form {
           .form-footer {
@@ -73,7 +76,7 @@
                 span {
                 float:left;
                 margin-top: 10px;
-                color:#999;  
+                color: $colorfondo;  
                 font-style: italic;
                 font-weight: thin;
                 }
@@ -82,7 +85,7 @@
       .btn {
         display:inline-block;
         padding:10px 20px;
-        background-color: #4e4e4e;
+        background-color: $colorfondo;
         font-size:17px;
         border:none;
         border-radius:5px;
@@ -91,7 +94,7 @@
      }
      
      .btn:hover {
-       background-color: orange;
+       background-color: $colororci;
        color:white;
      }
 

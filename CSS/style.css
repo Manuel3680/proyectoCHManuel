@@ -641,4 +641,22 @@ h2:after {
         text-align: center;
 }
 }
+
+/*Media Queries Franquicias*/
+@media (max-width: 1023px) {
+    #form-sass {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 1023px) {
+    #form-sass .horizontal-group {
+        width: 90%;
+        
+}
+}
 /* --------------------------------------- FIN MEDIA QUERIES*/
+
+
