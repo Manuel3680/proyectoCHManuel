@@ -331,9 +331,8 @@ footer .footer-bottom a {
 } 
 
 @media (max-width: 1023px) {
-    .section-iframe {
-        width: 90%;
-        text-align: center;
+    .videoTrabajo {
+        width: 100%;
 }
 }
 

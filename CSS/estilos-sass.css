@@ -142,8 +142,7 @@
 /*------------------------- FIN MIXIN*/
 @media (max-width: 1023px) {
   #form-sass {
-    gap: 15px;
-    width: 90%;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=estilos-sass.css.map */
