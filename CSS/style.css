@@ -272,6 +272,7 @@ footer .footer-bottom a {
     background-color: orange;
     padding: 5px;
     color: white;
+    width: 100%;
 }
 /*Slide clientes fin*/
 
@@ -328,6 +329,19 @@ footer .footer-bottom a {
     margin: auto;
     margin-bottom: 25px
 } 
+
+@media (max-width: 1023px) {
+    .section-iframe {
+        width: 90%;
+        text-align: center;
+}
+}
+
+
+video {
+    width: 100%;
+    margin-top: 10px;
+}
 
 .mapaHome {
     filter: grayscale(100%);
@@ -648,9 +662,3 @@ h2:after {
 /* --------------------------------------- FIN MEDIA QUERIES*/
 
 
-@media (max-width: 1023px) {
-    .section-iframe {
-        width: 90%;
-        text-align: center;
-}
-}
