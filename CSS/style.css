@@ -643,15 +643,14 @@ h2:after {
 }
 
 /*Media Queries Franquicias*/
-@media (max-width: 1023px) {
-    #form-sass {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-        width: 90%;
-    }
-}
+
 
 /* --------------------------------------- FIN MEDIA QUERIES*/
 
 
+@media (max-width: 1023px) {
+    .section-iframe {
+        width: 90%;
+        text-align: center;
+}
+}

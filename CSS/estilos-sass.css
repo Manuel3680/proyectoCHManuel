@@ -1,6 +1,6 @@
 #form-sass .signup-form {
   border-radius: 50px;
-  width: 800px;
+  width: 70%;
   margin: 30px auto;
   background: white;
 }
@@ -140,4 +140,10 @@
 }
 
 /*------------------------- FIN MIXIN*/
+@media (max-width: 1023px) {
+  #form-sass {
+    gap: 15px;
+    width: 90%;
+  }
+}
 /*# sourceMappingURL=estilos-sass.css.map */

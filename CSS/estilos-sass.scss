@@ -4,7 +4,7 @@ $colorfondo: #4e4e4e;
 #form-sass {
     .signup-form {
         border-radius: 50px;
-        width: 800px;
+        width: 70%;
         margin: 30px auto;
         background: white; 
     }
@@ -142,3 +142,13 @@ $colorfondo: #4e4e4e;
   @include mix-franq();
 }
 /*------------------------- FIN MIXIN*/
+
+
+@media (max-width: 1023px) {
+  #form-sass {
+    
+     
+      gap: 15px;
+      width: 90%;
+  }
+}
