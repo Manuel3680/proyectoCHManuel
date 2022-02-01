@@ -273,69 +273,103 @@ footer .footer-bottom a {
     padding: 5px;
     color: white;
     width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 /*Slide clientes fin*/
 
-.flex-main {
-    font-family: "Roboto";
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.imagenes-home h2 {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: orange;
+    padding: 5px;
+    color: white;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;   
 }
 
-.flex-main h2 {
-    color: orange;
-    font-size: 40px;
+.containerHome {
+    padding: 15px;
 }
+
+.img-box-home {
+    position: relative;
+    transition: .5s;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 0px 80px 
+}
+
+.img-box-home img {
+	filter: grayscale(1);
+    max-width: 100%;
+	border: 3px solid orange;
+	position: relative;
+	width: 100%;
     
-.flex-main p {
-    font-size: 20px;
 }
 
-.articulo1 {
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
+.img-box-home::before {
+	content: '';
+	border-left: 3px solid #ffffff;
+	border-top: 3px solid #ffffff;
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	width: 50px;
+	height: 50px;
+	z-index: 1;
+	transition: .5s;
 }
 
-.articulo2 {
-    background-color: white;
-    display: flex;
-   flex-direction: row-reverse;
-    gap: 15px;
-    text-align: right;
+.img-box-home::after {
+	content: '';
+	border-right: 3px solid #ffffff;
+	border-bottom: 3px solid #ffffff;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	width: 50px;
+	height: 50px;
+	z-index: 2;
+	transition: .5s;
+}
+ 
+.img-box-home img:hover {
+    filter: none;
 }
 
-.articulo3 {
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
- }
+.img-box-home:hover {
+  	transform: scale(1.04);
+}
 
- .articulo4 {
-    background-color: white;
-    display: flex;
-   flex-direction: row-reverse;
-    gap: 15px;
-    text-align: right;
- }
+.img-box-home:hover::before {
+  	left: 10px;
+  	top: 10px;
+}
+.img-box-home:hover::after {
+  	right: 10px;
+  	bottom: 10px;
+}
 
 .section-iframe {
     text-align: center;
-    font-family: "Roboto";
     margin: auto;
-    margin-bottom: 25px
+    margin-bottom: 20px
 } 
 
-@media (max-width: 1023px) {
-    .videoTrabajo {
-        width: 100%;
-}
-}
-
+.section-iframe h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: orange;
+    padding: 5px;
+    color: white;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+} 
 
 video {
     width: 100%;
@@ -348,43 +382,6 @@ video {
 
 .mapaHome:hover {
     filter:none;
-}
-
-.grid-area-home {
-    display:grid;
-    grid-template-areas: 
-        "header header header"
-        "nav nav nav"
-        "flyer flyer flyer"
-        "main main main"
-        "iframe iframe iframe"
-        "footer footer footer";
-}
-
-header {
-    grid-area: header;
-}
-
-nav {
-    grid-area: nav;
-}
-
-section.section-flyer{
-    grid-area: flyer;
-}
-
-main {
-    grid-area: main;
-}
-
-section.section-iframe {
-    grid-area: iframe;
-    width: 100%;
-}
-
-footer {
-    grid-area: footer;
-    
 }
 
 /* --------------------------------------- FIN HOME*/
@@ -595,50 +592,6 @@ h2:after {
 
 /* --------------------------------------- MEDIA QUERIES*/
 
-/*Media Queries Home*/
- @media (max-width: 1023px) {
-    .articulo1, .articulo2, .articulo3, .articulo4 {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 1023px) {
-     .flex-main h2{
-         text-align: center;
-         color: orange;
-    }
-}
-
-@media (max-width: 1023px) {
-    .flex-main p{
-        text-align: center;
-        color: rgb(0, 0, 0);
-        margin: 10px;
-   }
-}
-
-@media (max-width: 1023px) {
-    .flex-main img{
-        filter: grayscale(1)
-   }
-}
-
-@media (max-width: 1023px) {
-    .flex-main img:hover {
-        filter: none;
-        display: block;
-    }
-}
-
-@media (max-width: 1023px) {
-    .logoorci { 
-    display: block;
-    margin: auto;
-    }
-   
-} 
-
 /*Media Queries Contacto*/
 @media (max-width: 1023px) {
     .gridContacto {
@@ -659,5 +612,3 @@ h2:after {
 
 
 /* --------------------------------------- FIN MEDIA QUERIES*/
-
-
