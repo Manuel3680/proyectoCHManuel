@@ -24,7 +24,7 @@ body {
 
 .nav-item {
     font-size: 25px;
-    margin:10px
+    margin: 10px;
 }
 
 .container-fluid {
@@ -37,7 +37,7 @@ body {
 
 /* --------------------------------------- FIN NAV*/
 
-/* ---------------------------------------IMAGEN PRESENTACIÓN SECCIÓN*/
+/* ---------------------------------------IMAGEN PRESENTACIÓN ENCABEZADOS SECCIÓN*/
 
 .textoP {
     background-color: rgba(0,0,0,.7);
@@ -66,7 +66,7 @@ body {
     margin-bottom: 30px;
 }
 
-/* --------------------------------------- FIN IMAGEN PRESENTACIÓN SECCIÓN*/
+/* --------------------------------------- FIN IMAGEN PRESENTACIÓN ENCABEZADOS SECCIÓN*/
 
 /* --------------------------------------- FOOTER*/
 
@@ -211,8 +211,6 @@ footer .footer-bottom a {
 
 .im1 img {
     height: 200px;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
     width: 100%;
 }
 
@@ -541,7 +539,7 @@ h2:after {
 /* --------------------------------------- CONTACTO*/
 .gridContacto {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 30% 69%;
     gap: 80px;
 }
 
@@ -605,10 +603,16 @@ h2:after {
     .gridContacto .contacto {
         width: 90%;
         text-align: center;
+        margin: auto;
 }
 }
 
-/*Media Queries Franquicias*/
-
+@media (max-width: 1023px) {
+    .gridContacto .mapa {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 15px;
+}
+}
 
 /* --------------------------------------- FIN MEDIA QUERIES*/
